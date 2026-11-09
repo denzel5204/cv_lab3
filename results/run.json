@@ -1,0 +1,6 @@
+{
+  "device": "cpu",
+  "steps": 10,
+  "seed": 42,
+  "smoke": false
+}
