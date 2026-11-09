@@ -26,8 +26,8 @@
     <rect x="197" y="74" width="16" height="16" class="icon"/>
     <path d="M 202 74 V 90 M 208 74 V 90 M 197 79 H 213 M 197 85 H 213" class="icon"/>
     <text x="230" y="91" class="file">source/run.py</text>
-    <text x="200" y="137" class="text">Запуск эксперимента</text>
-    <text x="200" y="170" class="small">параметры, цикл обработки, сохранение результатов</text>
+    <text x="200" y="137" class="text">main()</text>
+    <text x="200" y="170" class="small">запуск и сохранение результатов</text>
   </a>
 
   <a href="../source/data.py">
@@ -36,8 +36,8 @@
     <rect x="197" y="264" width="16" height="16" class="icon"/>
     <path d="M 202 264 V 280 M 208 264 V 280 M 197 269 H 213 M 197 275 H 213" class="icon"/>
     <text x="230" y="281" class="file">source/data.py</text>
-    <text x="200" y="327" class="text">Подготовка эталона</text>
-    <text x="200" y="360" class="small">загрузка, обрезка, размер 512 x 512</text>
+    <text x="200" y="327" class="text">prepare_example_images()</text>
+    <text x="200" y="360" class="small">загрузка эталона 512 x 512</text>
   </a>
 
   <a href="../source/degradations.py">
@@ -46,8 +46,8 @@
     <rect x="197" y="454" width="16" height="16" class="icon"/>
     <path d="M 202 454 V 470 M 208 454 V 470 M 197 459 H 213 M 197 465 H 213" class="icon"/>
     <text x="230" y="471" class="file">source/degradations.py</text>
-    <text x="200" y="517" class="text">Получение входа модели</text>
-    <text x="200" y="550" class="small">уменьшение до 128 x 128 и добавление искажений</text>
+    <text x="200" y="517" class="text">make_degradation()</text>
+    <text x="200" y="550" class="small">создание входа 128 x 128</text>
   </a>
 
   <a href="../source/masks.py">
@@ -56,8 +56,8 @@
     <rect x="197" y="644" width="16" height="16" class="icon"/>
     <path d="M 202 644 V 660 M 208 644 V 660 M 197 649 H 213 M 197 655 H 213" class="icon"/>
     <text x="230" y="661" class="file">source/masks.py</text>
-    <text x="200" y="707" class="text">Создание бинарной маски</text>
-    <text x="200" y="740" class="small">0 сохранить область, 1 восстановить область</text>
+    <text x="200" y="707" class="text">create_mask()</text>
+    <text x="200" y="740" class="small">создание области восстановления</text>
   </a>
 
   <a href="../source/masked_sampler.py">
@@ -66,9 +66,8 @@
     <rect x="197" y="834" width="16" height="16" class="icon"/>
     <path d="M 202 834 V 850 M 208 834 V 850 M 197 839 H 213 M 197 845 H 213" class="icon"/>
     <text x="230" y="851" class="file">source/masked_sampler.py</text>
-    <text x="200" y="897" class="text">Восстановление изображения</text>
-    <text x="200" y="930" class="small">restore_full, весь кадр</text>
-    <text x="200" y="958" class="small">restore_masked, маска на каждом шаге</text>
+    <text x="200" y="907" class="text">restore_full(), restore_masked()</text>
+    <text x="200" y="945" class="small">полное и локальное восстановление</text>
   </a>
 
   <a href="../source/metrics.py">
@@ -77,9 +76,8 @@
     <rect x="197" y="1044" width="16" height="16" class="icon"/>
     <path d="M 202 1044 V 1060 M 208 1044 V 1060 M 197 1049 H 213 M 197 1055 H 213" class="icon"/>
     <text x="230" y="1061" class="file">source/metrics.py</text>
-    <text x="200" y="1107" class="text">Оценка результата</text>
-    <text x="200" y="1135" class="small">PSNR, outside MAE, LPIPS, CLIP-IQA</text>
-    <text x="200" y="1158" class="small">evaluate.py дополняет metrics.csv</text>
+    <text x="200" y="1107" class="text">masked_psnr(), calculate_lpips()</text>
+    <text x="200" y="1145" class="small">расчёт метрик качества</text>
   </a>
 
   <a href="../source/build_report.py">
@@ -88,8 +86,8 @@
     <rect x="197" y="1234" width="16" height="16" class="icon"/>
     <path d="M 202 1234 V 1250 M 208 1234 V 1250 M 197 1239 H 213 M 197 1245 H 213" class="icon"/>
     <text x="230" y="1251" class="file">source/build_report.py</text>
-    <text x="200" y="1297" class="text">Формирование отчёта</text>
-    <text x="200" y="1330" class="small">чтение metrics.csv, таблицы и графики</text>
+    <text x="200" y="1297" class="text">main()</text>
+    <text x="200" y="1330" class="small">построение таблиц и графиков</text>
   </a>
 
   <path d="M 450 200 V 245" class="path"/>

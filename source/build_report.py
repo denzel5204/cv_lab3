@@ -27,7 +27,7 @@ def main() -> None:
         {
             (row["image"], row["degradation"], row["mask"])
             for row in rows
-            if row["mask"] in {"center", "soft_center"}
+            if row["mask"] in {"center", "soft_center", "two_regions"}
         }
     )
     for image_name, degradation, mask_name in comparison_keys:

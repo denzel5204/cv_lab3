@@ -1,5 +1,5 @@
 {
-  "device": "cpu",
+  "device": "mps",
   "steps": 10,
   "seed": 42,
   "smoke": false
