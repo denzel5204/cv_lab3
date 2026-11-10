@@ -150,17 +150,25 @@ python -m source.run \
 
 Для маски из двух областей пошаговый вариант повысил средний PSNR на bicubic с `25,53` до `26,66` дБ. При сильном ухудшении склейка снова оказалась точнее: `21,44` дБ против `20,55` дБ.
 
-![Сравнение на bicubic](images/astronaut_bicubic_center.png)
+![Bicubic на astronaut](images/astronaut_bicubic_center.png)
+
+![Bicubic на coffee](images/coffee_bicubic_center.png)
 
 На bicubic простая склейка создаёт заметную квадратную границу. Маска внутри сэмплинга делает переход мягче.
 
-![Сравнение на комбинированном искажении](images/astronaut_unknown_center.png)
+![Сильное ухудшение на astronaut](images/astronaut_unknown_center.png)
+
+![Сильное ухудшение на coffee](images/coffee_unknown_center.png)
 
 При сильном искажении пошаговое ограничение мешает модели полноценно восстановить выбранную область. В этом случае готовый восстановленный фрагмент выглядит резче.
 
-![Комбинированная маска](images/astronaut_bicubic_two_regions.png)
+![Комбинированная маска на astronaut](images/astronaut_bicubic_two_regions.png)
 
 Две отдельные области восстанавливаются за один проход. Пиксели между ними сохраняются из bicubic-изображения.
+
+![Комбинированная маска на втором изображении](images/coffee_bicubic_two_regions.png)
+
+На втором изображении тот же алгоритм проверяется на сцене с другой текстурой и распределением деталей.
 
 ![Сравнение метрик](images/metrics.png)
 
